@@ -4,7 +4,7 @@ import friends from '../data/friends';
 import transactions from '../data/transactions';
 import Profile from '../profile/Profile';
 import Statistics from '../statistics/Statistics';
-import FriendsList from '../friendsList/FriendsList';
+import FriendList from '../friendList/FriendList';
 import TransactionHistory from '../transactionHistory/TransactionHistory';
 
 export const App = () => {
@@ -30,7 +30,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="upload stats" stats={data} />
-      <FriendsList friends={friends} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </>
   );
